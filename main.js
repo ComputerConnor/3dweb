@@ -70,14 +70,30 @@ scene.background = spaceTexture;
 
 // Avatar
 
+<<<<<<< CodeSandbox
+const duckTexture = new THREE.TextureLoader().load("duck.jpg");
+=======
 const jeffTexture = new THREE.TextureLoader().load("jeff.png");
+>>>>>>> GitHub
 
+<<<<<<< CodeSandbox
+const duck = new THREE.Mesh(
+=======
 const jeff = new THREE.Mesh(
+>>>>>>> GitHub
   new THREE.BoxGeometry(3, 3, 3),
+<<<<<<< CodeSandbox
+  new THREE.MeshBasicMaterial({ map: duckTexture })
+=======
   new THREE.MeshBasicMaterial({ map: jeffTexture })
+>>>>>>> GitHub
 );
 
+<<<<<<< CodeSandbox
+scene.add(duck);
+=======
 scene.add(jeff);
+>>>>>>> GitHub
 
 // Moon
 
@@ -97,8 +113,13 @@ scene.add(moon);
 moon.position.z = 30;
 moon.position.setX(-10);
 
+<<<<<<< CodeSandbox
+duck.position.z = -5;
+duck.position.x = 2;
+=======
 jeff.position.z = -5;
 jeff.position.x = 2;
+>>>>>>> GitHub
 
 // Scroll Animation
 
@@ -108,8 +129,13 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
+<<<<<<< CodeSandbox
+  duck.rotation.y += 0.01;
+  duck.rotation.z += 0.01;
+=======
   jeff.rotation.y += 0.01;
   jeff.rotation.z += 0.01;
+>>>>>>> GitHub
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
