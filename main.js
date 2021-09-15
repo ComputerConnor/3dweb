@@ -1,7 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-//import { OBJLoader } from "./resources/threejs/r132/examples/jsm/loaders/OBJLoader.js";
+import { OBJLoader } from "./resources/threejs/r132/examples/jsm/loaders/OBJLoader.js";
 // Setup
 
 const scene = new THREE.Scene();
@@ -87,15 +87,6 @@ const moon = new THREE.Mesh(
   })
 );
 
-//UFO
-
-//{
-//const objLoader = new OBJLoader();
-//objLoader.load("resources/models/ufo/Low_poly_UFO.obj", (root) => {
-//scene.add(root);
-//});
-//}
-
 scene.add(moon);
 
 moon.position.z = 30;
@@ -103,6 +94,15 @@ moon.position.setX(-10);
 
 duck.position.z = -5;
 duck.position.x = 2;
+
+//UFO
+
+{
+const objLoader = new OBJLoader();
+objLoader.load("resources/models/ufo/Low_poly_UFO.obj", (root) => {
+scene.add(root);
+});
+}
 
 // Scroll Animation
 
