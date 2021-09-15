@@ -1,7 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { OBJLoader } from "./resources/threejs/r132/examples/jsm/loaders/OBJLoader.js";
+import {OBJLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/examples/jsm/loaders/OBJLoader.js';
 // Setup
 
 const scene = new THREE.Scene();
