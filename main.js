@@ -89,12 +89,12 @@ const moon = new THREE.Mesh(
 
 //UFO
 
-{
-  const objLoader = new OBJLoader();
-  objLoader.load("resources/models/ufo/Low_poly_UFO.obj", (root) => {
-    scene.add(root);
-  });
-}
+//{
+//const objLoader = new OBJLoader();
+//objLoader.load("resources/models/ufo/Low_poly_UFO.obj", (root) => {
+//scene.add(root);
+//});
+//}
 
 scene.add(moon);
 
