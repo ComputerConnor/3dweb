@@ -1,7 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-
+import { OBJLoader } from "./resources/threejs/r132/examples/jsm/loaders/OBJLoader.js";
 // Setup
 
 const scene = new THREE.Scene();
@@ -86,6 +86,15 @@ const moon = new THREE.Mesh(
     normalMap: normalTexture
   })
 );
+
+//UFO
+
+{
+  const objLoader = new OBJLoader();
+  objLoader.load("resources/models/ufo/Low_poly_UFO.obj", (root) => {
+    scene.add(root);
+  });
+}
 
 scene.add(moon);
 
